@@ -1,0 +1,29 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+  application:
+    name: pedirehab
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pedirehab_db
+    username: postgres
+    password: "190504"
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      "[hibernate.format_sql]": true
+
+  server:
+    tomcat:
+      max-swallow-size: -1
+
+jwt:
+  secret: cGVkaXJlaGFiLXN1cGVyLXNlY3JldC1rZXktMjAyNi1qd3QtMjU2Yml0LXNlY3VyaXR5
+  expiration-ms: 86400000 # 24 saat (milisaniye)

@@ -1,0 +1,53 @@
+package com.example.pedirehab.dto;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.ZonedDateTime;
+import java.util.List;
+
+public record PatientDetailResponse(
+        Long id,
+        String patientCode,
+        LocalDate birthDate,
+        String gender,
+        BigDecimal heightCm,
+        BigDecimal weightKg,
+        Short gestationalWeek,
+        Integer birthWeightGram,
+        Boolean hasNicuHistory,
+        Boolean hasEpilepsy,
+        Boolean usesRegularMedication,
+        Boolean hasVisionIssue,
+        Boolean hasHearingIssue,
+        Boolean hasGiIssue,
+        Boolean hasSleepIssue,
+        Boolean hasOrthopedicIssue,
+        String gmfcsLevel,
+        String cpType,
+        String bodyInvolvement,
+        List<String> assistiveDevices,
+        Boolean hasBotoxHistory,
+        String pastSurgeries,
+        String communicationLevel,
+        String dailyActivityState,
+        String regularPtDuration,
+        String travelTimeToCenter,
+        Boolean hasPriorHomeProgram,
+        String motherEducation,
+        String fatherEducation,
+        Boolean motherWorking,
+        Boolean fatherWorking,
+        String suitableHomeSpace,
+        String primaryCaregivers,
+        List<String> accessibleDevices,
+        Boolean hasInternet,
+        String childGameInterest,
+        String parentDailyScreenTime,
+        String appUsageCompetency,
+        Boolean usedHealthAppBefore,
+        Boolean isSickModeActive,
+        Boolean isAtRisk,
+        String riskReason,
+        ZonedDateTime lastActiveAt,
+        ZonedDateTime createdAt
+) {}
